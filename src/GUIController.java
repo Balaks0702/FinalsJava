@@ -44,7 +44,7 @@ public class GUIController implements Initializable
 
     @FXML public void selectBrand(String brand)
     {
-        
+
     }
 }
 

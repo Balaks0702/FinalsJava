@@ -15,8 +15,10 @@ public class Car implements Comparable<Car>
         setPrice(price);
     }
 
+    //method to get the brand
     public String getBrand() { return brand; }
 
+    //method to check the validation of brand
     public void setBrand(String brand)
     {
         if( brand.length() > 0 && brand.length() <=30 )
@@ -25,8 +27,10 @@ public class Car implements Comparable<Car>
             throw new IllegalArgumentException("The length of brand must be in the range of 0-30 characters");
     }
 
+    //method to get the model
     public String getModel() { return model; }
 
+    //method to check the validation of model
     public void setModel(String model)
     {
         if( model.length() > 0 && model.length() <=30)
@@ -35,8 +39,10 @@ public class Car implements Comparable<Car>
             throw new IllegalArgumentException("The length of model must be in the range of 0-30 characters");
     }
 
+    //method to get the year
     public float getYear() { return year; }
 
+    //method to check the validation of the year
     public void setYear(int year)
     {
         int nowYear = LocalDate.now().getYear();
@@ -47,8 +53,10 @@ public class Car implements Comparable<Car>
             throw new IllegalArgumentException("The year must be in the range of 1902 and present year +1 ");
     }
 
+    //method to get the kilometers
     public float getKilometers() { return kilometers; }
 
+    //method to validate the kilometer
     public void setKilometers(int kilometers)
     {
         if(kilometers >=0)
@@ -57,8 +65,10 @@ public class Car implements Comparable<Car>
             throw new IllegalArgumentException("The kilometers must be greater than 0");
     }
 
+    //method to get the price
     public double getPrice() { return price; }
 
+    //method to validate the price
     public void setPrice(double price)
     {
         if(price >= 0)
@@ -67,6 +77,7 @@ public class Car implements Comparable<Car>
             throw new IllegalArgumentException("The price must be greater than 0");
     }
 
+    //method to sort the car by a-z brand then model and then low to high kilometers
     @Override
     public int compareTo(Car car)
     {
