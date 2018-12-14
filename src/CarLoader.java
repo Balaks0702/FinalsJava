@@ -4,7 +4,8 @@ import java.util.Scanner;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-public class CarLoader {
+public class CarLoader
+{
     public static TreeMap<String, TreeSet<Car>> loadCars()
     {
         TreeMap<String, TreeSet<Car>> cars = new TreeMap<>();
