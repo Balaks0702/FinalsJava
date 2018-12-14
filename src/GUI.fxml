@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI">
+   <children>
+      <TableView fx:id="table" layoutX="25.0" layoutY="213.0" prefHeight="200.0" prefWidth="550.0">
+        <columns>
+          <TableColumn fx:id="year" prefWidth="74.66665840148926" text="Year" />
+          <TableColumn fx:id="brand" prefWidth="122.0000228881836" text="Brand" />
+            <TableColumn fx:id="model" prefWidth="182.00001525878906" text="Model" />
+            <TableColumn fx:id="kilometers" prefWidth="78.6666259765625" text="Kilometers" />
+            <TableColumn fx:id="price" prefWidth="93.99996948242188" text="Price" />
+        </columns>
+      </TableView>
+      <Button fx:id="sell" layoutX="523.0" layoutY="429.0" mnemonicParsing="false" text="Sell Car" />
+      <Label layoutX="25.0" layoutY="442.0" text="Value of inventory showing:" />
+      <ImageView fx:id="imageView" fitHeight="180.0" fitWidth="250.0" layoutX="325.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <ChoiceBox fx:id="brandBox" layoutX="39.0" layoutY="91.0" prefWidth="150.0" />
+      <Label layoutX="39.0" layoutY="65.0" text="Select Brand: " />
+      <Label fx:id="inventory" layoutX="175.0" layoutY="442.0" />
+   </children>
+</AnchorPane>
